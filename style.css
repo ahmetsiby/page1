@@ -213,7 +213,17 @@ body {
     transform: translatey(110%);
     transition: all 0.5s ease-in-out;
     min-height: 400px;
+    /**/
+    background-color: transparent;
+    background-image: url(senegal.webp);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
   }
+  .navbar__links {
+  }
+
   .show-nav .navbar__links {
     width: 100vw;
     transform: translateX(0);
