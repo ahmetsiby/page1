@@ -161,8 +161,13 @@ body {
   font-size: var(--font-size);
   font-family: "Poppins", sans-serif;
 }
+
 .main-content {
-  padding: 1rem;
+  width: 80%;
+  margin: auto;
+  text-align: center;
+  position: relative;
+  background-color: rgb(230, 225, 218, 0.4);
 }
 /* Navbar */
 .navbar {
@@ -186,9 +191,10 @@ body {
 }
 .navbar__links {
   display: flex;
+  align-self: flex-end;
 }
 .navbar__link {
-  padding: 0 10px;
+  padding: 0 1rem;
 }
 .navbar__link > a {
   color: var(--navbar-color);
@@ -196,6 +202,40 @@ body {
 }
 .burger {
   display: none;
+}
+/* corps de notre page*/
+.title {
+  margin: 1rem 0.4rem;
+  line-height: 2rem;
+}
+.content {
+  margin: 0 15%;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+}
+.content__img {
+  min-width: 180px;
+  max-width: 270px;
+  flex: 1;
+  margin: 1rem 0.5rem;
+  border: 0.1rem solid #d3d4d6;
+  border-radius: 0.5rem;
+}
+
+.image {
+  position: absolute;
+  width: 80px;
+  top: -45px;
+  left: calc(50% - 40px);
+}
+.elem__img {
+  width: 100%;
+  filter: grayscale(100%);
+}
+.elem__img:hover {
+  filter: grayscale(0);
+  transition: filter 0.5s ease-in-out;
 }
 
 /*  Small device */
@@ -208,7 +248,7 @@ body {
     height: calc(100% - 65px);
     position: absolute;
     top: 5rem;
-    left: 0px;
+    left: -300px;
     background: var(--navbar-bg-color);
     transform: translatey(110%);
     transition: all 0.5s ease-in-out;
@@ -220,12 +260,15 @@ body {
     background-attachment: fixed;
     background-size: cover;
     background-position: center;
+    filter: grayscale(80%);
   }
-  .navbar__links {
+  .navbar__links:hover {
+    filter: grayscale(10%);
   }
 
   .show-nav .navbar__links {
     width: 100vw;
+    left: 0px;
     transform: translateX(0);
   }
   .navbar__link {
@@ -240,7 +283,7 @@ body {
     display: block;
     padding: 1rem;
     font-size: 1.6rem;
-    color: var(--navbar-color);
+    color: red;
     transition: all 0.4s ease-in-out;
   }
   .navbar__link > a:hover {
@@ -305,12 +348,7 @@ body {
   .show-nav .third {
     transition: all 1.2s ease-out;
   }
-  .show-nav .four {
-    transition: all 1.3s ease-out;
-  }
-  .show-nav .fifth {
-    transition: all 1.4s ease-out;
-  }
+  /* contenue*/
 }
 
 /*  Medium device - Bonus */
