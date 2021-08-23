@@ -288,7 +288,7 @@ body {
   }
   .navbar__link > a:hover {
     padding-left: 2rem;
-    letter-spacing: 5px;
+    letter-spacing: 10px;
   }
 
   /* Toggle menu */
@@ -352,7 +352,10 @@ body {
 }
 
 /*  Medium device - Bonus */
-@media screen and (min-width: 768px) {
+@media screen and (max-width: 768px) {
+  .navbar__links {
+    filter: grayscale(0%);
+  }
   .navbar__logo {
     z-index: 3;
   }
@@ -371,6 +374,11 @@ body {
   }
   .navbar__link > a {
     padding: 0.2rem;
-    font-size: 1.2rem;
+    font-size: 2rem;
+    line-height: 5rem;
+  }
+  .image,
+  .elem__img {
+    filter: grayscale(0%);
   }
 }
