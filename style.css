@@ -228,7 +228,7 @@ body {
 }
 .scrool {
   height: calc(100vh - 84px);
-  background-image: url(scrool1.jpeg);
+  background-image: url(scrool2.png);
   background-attachment: fixed;
   background-repeat: no-repeat, no-repeat;
   background-size: cover;
@@ -463,11 +463,11 @@ body {
 /* image de separation*/
 .separation {
   height: 30vh;
-  background-image: url(sep.jpeg);
+  background-image: url(scrool2.png);
   background-attachment: fixed;
   background-repeat: no-repeat, no-repeat;
   background-size: cover;
-  background-position: center center;
+  background-position: bottom center;
   display: flex;
   align-items: center;
   justify-content: center;
