@@ -170,9 +170,11 @@ body {
   background-color: rgb(230, 225, 218, 0.4);
 }
 .btn {
+  font-size: 1.3rem;
   padding: 1rem 2rem;
-  background-color: cornsilk;
-  color: #000;
+  background-color: rgb(56, 48, 16);
+  color: rgb(124, 53, 53);
+  border-radius: 1rem;
 }
 .btn:hover {
   background-color: #000;
@@ -228,7 +230,7 @@ body {
 }
 .scrool {
   height: calc(100vh - 84px);
-  background-image: url(scrool2.png);
+  background-image: url(fond.png);
   background-attachment: fixed;
   background-repeat: no-repeat, no-repeat;
   background-size: cover;
@@ -313,6 +315,18 @@ body {
 .navbar__link:hover > a::after {
   width: 100%;
 }
+/* image de separation*/
+.separation {
+  height: 30vh;
+  background-image: url(fond.png);
+  background-attachment: fixed;
+  background-repeat: no-repeat, no-repeat;
+  background-size: cover;
+  background-position: bottom center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 /*  Medium device - Bonus */
 @media screen and (max-width: 768px) {
   .navbar__links {
@@ -328,6 +342,13 @@ body {
 }
 /*  Small device */
 @media screen and (max-width: 500px) {
+  .scrool {
+    background-image: url(fond2.jpeg);
+  }
+  .separation {
+    height: 250px;
+    background-image: url(fond2.jpeg);
+  }
   .navbar__links {
     padding-top: 5px;
     display: flex;
@@ -458,17 +479,4 @@ body {
 }
 .notrot {
   transform: rotate(-5deg);
-}
-
-/* image de separation*/
-.separation {
-  height: 30vh;
-  background-image: url(scrool2.png);
-  background-attachment: fixed;
-  background-repeat: no-repeat, no-repeat;
-  background-size: cover;
-  background-position: bottom center;
-  display: flex;
-  align-items: center;
-  justify-content: center;
 }
