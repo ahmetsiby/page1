@@ -343,11 +343,11 @@ body {
 /*  Small device */
 @media screen and (max-width: 500px) {
   .scrool {
-    background-image: url(/photo/25.jpeg);
+    background-image: url(/petit.jpg);
   }
   .separation {
     height: 250px;
-    background-image: url(/photo/27.jpeg);
+    background-image: url(/petit.jpg);
   }
   .navbar__links {
     padding-top: 5px;
