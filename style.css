@@ -343,23 +343,11 @@ body {
 /*  Small device */
 @media screen and (max-width: 500px) {
   .scrool {
-    background-color: transparent;
     background-image: url(senegal.webp);
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-size: cover;
-    background-position: center;
-    filter: grayscale(80%);
   }
   .separation {
     height: 450px;
-    background-color: transparent;
     background-image: url(senegal.webp);
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-size: cover;
-    background-position: center;
-    filter: grayscale(80%);
   }
   .navbar__links {
     padding-top: 5px;
